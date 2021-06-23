@@ -1,0 +1,32 @@
+class Solution {
+    public boolean isPalindrome(int x) 
+    {
+        int num=x;
+        int rem,sum=0;
+        while(x!=0)
+        {
+          rem=x%10;
+         sum=(sum*10)+rem;
+          x=x/10;  
+            
+        }
+        if(num<0)
+        {
+            return false;
+        }
+        if(sum==num)
+        {
+           
+            return true;
+        }
+        else
+        {
+           
+            return false;
+        }
+  
+        
+        
+    }
+    
+}
