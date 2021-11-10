@@ -1,0 +1,18 @@
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        
+          int size1=nums1.length; 
+        int size2=nums2.length; 
+        int size3=size1-1;
+        
+        for(int i=0;i<size2;i++)
+        {
+            nums1[size3-i]=nums2[i];
+                
+        }
+
+         Arrays.sort(nums1);
+            }
+    
+        
+    }
